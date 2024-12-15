@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA DRIFT</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{
+          
+            background-image: url(/assets/wallpanel.png);  
+  background-size: contain;
+  background-repeat: repeat;
+  
+        }
+  
+  
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  max-width: 600px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+   font-family: Garamond, serif;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+.casefile{
+  
+ font-family:"Courier New", monospace; 
+  
+}
+ 
+.highlight {
+ 
+  
+  border:  2px solid black;
+  padding:.2%;
+line-height: 1.8;
+}
+
+ 
+.highlight:hover {
+  
+  background-color:yellow;
+  
+cursor: help; 
+}
+
+
+ 
+.light {
+  color:black;
+  background-color:white;
+  border: 1px solid white;
+ 
+}
+
+
+.midddle{
+ text-align: center; 
+}
+
+.gray{
+ 
+color:#2b2b2b;
+}
+
+
+ 
+
+
+.panel{
+font-family: "Lucida Console",monospace;
+}
+
+
+#player {
+ width:95%; 
+
+}
+
+.shift{
+ color:#b00000; 
+
+}
+
+.shift:hover{
+  color:red;
+  font-weight:bold;
+  
+}
+
+
+.notes{
+font-family:Courier,monospace;
+width:90%;
+margin: auto;
+border: 1px solid gray;
+padding:2%;
+color:#b2b2b2;
+}
+
+
+ 
+
+
+.login{
+ 
+ border: 2px solid gray;
+ width:100%;
+ text-align: center;
+ margin:auto;
+}
+
+
+  </style>
+  
+     <link rel="shortcut icon" href="../assets/sphere.jpg" type="image/x-icon"> 
+  </head>
+  <body>
+  
+  <div id="myDIV">
+  <DIV ID="reddd">
+
+  <div class = "main">
+    
+    <a href="../index.html">HOME</a> || <a href="../archive.html">COLLECTION</a> || <a href="../about.html">PAPER</a> || <a href="../credits.html">CHAT</a> 
+  </div>  
+  <div class= "main3">   
+  ts.o2_07  <span style="float:right;"><img src = "../assets/eye corner.png" style="width: 80%;"></span>
+  </div>  
+  <div class= "main2">   
+  
+  
+  
+  <div class= "textbox">
+    <!-- Haha, One -->
+   <a href="003.html"><button class="obvsbutton"><h3> ← ← ← </h3></button></a>
+   <pre>
+   </pre>
+  <div class="casefile">
+  <div class="casefileinner">
+<div class="casefileinner1">
+<pre>
+
+
+
+</pre>
+
+<div class="midddle">
+<h2>COGNITION SCREENING TEST</h2> 
+</div>
+<div id = "big1">
+<div class="midddle">
+<h3>SECTION ONE: OBJECT RECOGNITION</h3>
+
+<p>
+<pre>
+</pre>
+INSTRUCTIONS: In a single word, identify the object in the picture.
+<pre>
+
+</pre>
+
+<div id="q1">
+
+<img src="../assets/tree.png" style="width: 80%;">
+<p>
+
+<span class="highlight"><span id="a1">___________</span></span>
+
+<pre>
+
+</pre>
+
+	<div id="div5" style="display:none;">
+	<audio id="myAudio" controls loop>
+  <source src="../assets/Chopin - Op. 34 No. 2 In A Minor.mp3" type="audio/mpeg" >
+  Your browser does not support the audio tag.
+</audio>  </div>
+
+
+<span class="highlight"><forward1><click onclick="playAudio()" type="button">NEXT</click></forward1></span>
+<pre>
+
+</pre>
+
+</div>
+
+<div id="q2" style="display:none;">
+<img src="../assets/shoe.png" style="width: 80%;">
+<p>
+
+<span class="highlight"><span id="a2">___________</span></span>
+
+<pre>
+
+</pre>
+<span class="highlight"><back1>PREVIOUS</back1></span>&ensp;&ensp;<span class="highlight"><forward2>NEXT</forward2></span>
+
+<pre>
+
+</pre>
+</div>
+<div id="q3" style="display:none;">
+<img src="../assets/door.png" style="width: 80%;">
+<p>
+
+<span class="highlight"><span id="a3">___________</span></span>
+
+<pre>
+
+</pre>
+<span class="highlight"><back2>PREVIOUS</back2></span>&ensp;&ensp;<span class="highlight"><forward3>NEXT</forward3></span>
+
+<pre>
+
+</pre>
+</div>
+<div id="q4" style="display:none;">
+<img src="../assets/bed.png" style="width: 80%;">
+<p>
+
+
+<span class="highlight"><span id="a4">___________</span></span>
+
+<pre>
+
+</pre>
+<span class="highlight"><back3>PREVIOUS</back3></span>&ensp;&ensp;<span class="highlight"><forward4>NEXT</forward4></span>
+<pre>
+
+</pre>
+</div>
+<div id="q5" style="display:none;">
+<img src="../assets/mirror.png" style="width: 80%;">
+<p>
+
+<span class="highlight"><span id="a5">___________</span></span>
+
+<pre>
+
+</pre>
+<span class="highlight"><back4>PREVIOUS</back4></span>&ensp;&ensp;<span class="highlight"><forward5>NEXT</forward5></span>
+<pre>
+
+</pre>
+
+</div>
+</div>
+
+</div>
+<!--  AAAAAUUHHHHGJHGJHGJHD number two  -->
+
+
+
+<div id="big2" style="display:none;">
+<div class="midddle">
+<h3>SECTION TWO: ACTION RECOGNITION</h3>
+
+<p>
+<pre>
+</pre>
+INSTRUCTIONS: Identify the action being performed. Complete the sentence. 
+<pre>
+
+
+</pre>
+<div id="q6">
+<img src="../assets/dog.png" style="width: 80%;">
+<p>
+
+The dog is <span class="highlight"><span id="a6">___________</span></span>.
+
+<pre>
+
+</pre>
+<span class="highlight"><back5>PREVIOUS</back5></span>&ensp;&ensp;<span class="highlight"><forward6>NEXT</forward6></span>
+<pre>
+
+</pre>
+
+</div>
+<div id="q7" style="display:none;">
+
+
+<img src="../assets/sitting.png" style="width: 80%;">
+<p>
+
+The man is <span class="highlight"><span id="a7">___________</span></span>.
+
+<pre>
+
+</pre>
+<span class="highlight"><back6>PREVIOUS</back6></span>&ensp;&ensp;<span class="highlight"><forward7>NEXT</forward7></span>
+
+<pre>
+
+</pre>
+</div>
+<div id="q8" style="display:none;">
+
+<img src="../assets/sun.png" style="width: 80%;">
+<p>
+
+The sun is <span class="highlight"><span id="a8">___________</span></span>.
+
+<pre>
+
+</pre>
+<span class="highlight"><back7>PREVIOUS</back7></span>&ensp;&ensp;<span class="highlight"><forward8>NEXT</forward8></span>
+
+
+<pre>
+
+</pre>
+</div>
+<div id="q9" style="display:none;">
+
+<img src="../assets/snow.png" style="width: 80%;">
+<p>
+
+The cloud is <span class="highlight"><span id="a9">___________</span></span>.
+
+<pre>
+
+</pre>
+<span class="highlight"><back8>PREVIOUS</back8></span>&ensp;&ensp;<span class="highlight"><forward9>NEXT</forward9></span>
+
+
+<pre>
+
+</pre>
+</div>
+<div id="q10" style="display:none;">
+
+<span id="sleeperrr"><img src="../assets/sleep1.png" style="width: 80%;"></span>
+<p>
+
+The woman is <span class="popup"><span class="highlight"><span id="a10">___________</span></span>
+          <span class="popuptext" id="myPopup">
+            <i>Gone</i>, your mind supplies. 
+          </span>
+   </span> .
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back9>PREVIOUS</back9></span>&ensp;&ensp;<span class="highlight"><forward10>NEXT</forward10></span>
+<pre>
+
+</pre>
+
+</div>
+</div>
+
+</div>
+<!--  AAAAAUUHHHHGJHGJHGJHD number three  -->
+<div id="big3" style="display:none;">
+  
+  <div class="midddle">
+<h3>SECTION THREE: FACIAL RECOGNITION</h3>
+
+<p>
+<pre>
+</pre>
+INSTRUCTIONS: In a single word, identify the emotion displayed. 
+<pre>
+
+
+</pre>
+<div id="eleven" style="display:none;">
+ 
+ 
+
+<img src="../assets/relief.png" style="width: 80%;">
+<p>
+ <span class="popup"> <span class="highlight"><span id="a11">___________</span></span>
+
+          <span class="popuptext" id="myPopup">
+            Never coming back. 
+           
+          </span>
+   </span>
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back10>PREVIOUS</back10></span>&ensp;&ensp;<span class="highlight"><forward11>NEXT</forward11></span>
+
+ </div>
+
+
+<div id="q12" style="display:none;">
+ 
+ 
+
+<img src="../assets/honsee.png" style="width: 80%;">
+<p>
+<p>
+<pre>
+
+</pre>
+ <span class="popup"><span class="highlight"><span id="a12">___________</span></span>
+ 
+ 
+          <span class="popuptext" id="myPopup">
+            You tell yourself it's better this way. 
+          </span>
+   </span> 
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back11>PREVIOUS</back11></span>&ensp;&ensp;<span class="highlight"><forward12>NEXT</forward12></span>
+
+ </div>
+
+<div id="q13" style="display:none;">
+ 
+ 
+
+<img src="../assets/hands.gif" style="width: 80%;">
+<p>
+ <span class="popup"><span class="highlight"><span id="a13">___________</span></span>
+ 
+ 
+
+<span class="popuptext" id="myPopup">
+You tell yourself you had no other choice. 
+           
+          </span>
+   </span> 
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back12>PREVIOUS</back12></span>&ensp;&ensp;<span class="highlight"><forward13>NEXT</forward13></span>
+
+ </div>
+
+
+<div id="q14" style="display:none;">
+ 
+ 
+
+<img src="../assets/inbed2.gif" style="width: 80%;">
+<p>
+ <span class="popup"><span class="highlight"><span id="a14">___________</span></span> 
+ 
+ 
+  
+ <span class="popuptext" id="myPopup">
+             Stop, Fodder. You were doing so well.
+          </span>
+   </span> 
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back13>PREVIOUS</back13></span>&ensp;&ensp;<span class="highlight"><forward14>NEXT</forward14></span>
+
+ </div>
+
+
+<div id="q15" style="display:none;">
+ 
+ 
+
+<img src="../assets/hole.png" style="width: 80%;">
+<p>
+ <span class="popup"><span class="highlight"><span id="a15">___________</span></span>
+
+          <span class="popuptext" id="myPopup">
+             Please, stop.
+          </span>
+   </span> 
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back14>PREVIOUS</back14></span>&ensp;&ensp;<span class="highlight"><forward15>NEXT</forward15></span>
+
+ </div>
+
+</div>
+</div>
+
+
+<!--  give it up for number four. this is so long. how was your day? mine was bad but its like, fine  -->
+<div id="big4" style="display:none;">
+  
+  <div class="midddle">
+<h3>SECTION FOUR: </h3>
+
+<p>
+<pre>
+</pre>
+INSTRUCTIONS: Listen to me.
+<pre>
+
+
+</pre>
+<div id="q16">
+ 
+ 
+
+<span id="bad"><img src="../assets/hole.png" style="width: 80%;"></span>
+<p>
+<span class="popup">
+        <span class="highlight"><span id="a16">It doesn't get easier, does it? They say it will, but I suppose things are different when it's your fault. How does it feel?</span></span>
+          <span class="popuptext" id="myPopup">
+            There's another in this room, besides you and your keeper. She stands just within the bounds of your periphery. You don't look, but you know what you would see if you did.
+          </span>
+   </span> 
+   
+   
+
+
+<p>
+
+<pre>
+
+</pre>
+<span class="highlight"><back15>PREVIOUS</back15></span>&ensp;&ensp;<span class="highlight"><forward16>NEXT</forward16></span>
+
+ </div>
+
+
+<div id="q17" style="display:none;">
+ 
+ 
+
+<span id="sry"><img src="../assets/hole.png" style="width: 80%;"></span>
+<p>
+<span class="popup">
+        <span class="highlight"><span id="a17">How could you do that to me? No, don't bother sharing. I've heard it all before. I know you hate me. I tried, you know. I tried. </span></span>
+          <span class="popuptext" id="myPopup">
+            Sweat and grease soaked hair clings to her face, a ragged and stained nightshirt to her body. You want to say, <i>I'm sorry</i>. 
+          </span>
+   </span> 
+
+
+<p>
+
+<pre>
+
+</pre>
+<span class="highlight"><back16>PREVIOUS</back16></span>&ensp;&ensp;<span class="highlight"><forward17>NEXT</forward17></span>
+
+ </div>
+
+<div id="q18" style="display:none;">
+ 
+ 
+
+<span id="would"><img src="../assets/hole.png" style="width: 80%;"></span>
+<p>
+
+<span class="popup">
+        <span class="highlight"><span id="a18"> Think about yourself. Think about <i>them.</i> </span></span>
+          <span class="popuptext" id="myPopup">
+          
+           Her hands and feet have turned blue from the pooling of blood. She must be so cold.
+             
+          </span>
+   </span> 
+
+
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back17>PREVIOUS</back17></span>&ensp;&ensp;<span class="highlight"><forward18>NEXT</forward18></span>
+
+ </div>
+
+
+<div id="q19" style="display:none;">
+ 
+ 
+
+<img src="../assets/hole.png" style="width: 80%;">
+<p>
+
+<span class="popup">
+        <span class="highlight"><span id="a19"> I didn't raise you to be such a selfish, cruel thing. What happened to you?</span></span>
+          <span class="popuptext" id="myPopup">
+            Your brain— a slave to habit— tells you to listen for her breathing, for her footsteps, but she has since lost the need for either.
+             
+          </span>
+   </span> 
+
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back18>PREVIOUS</back18></span>&ensp;&ensp;<span class="highlight"><forward19>NEXT</forward19></span>
+
+ </div>
+
+
+<div id="q20" style="display:none;">
+ 
+ 
+
+<img src="../assets/hole.png" style="width: 80%;">
+<p>
+<span class="popup">
+        
+<span class="highlight"><span id="a20"> It's disgusting. </span></span>
+          <span class="popuptext" id="myPopup">
+She never speaks, only stares. She never moves, only sways. 
+             
+          </span>
+   </span> 
+
+
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back19>PREVIOUS</back19></span>&ensp;&ensp;<span class="highlight"><forward20>NEXT</forward20></span>
+
+ </div>
+
+<div id="q21" style="display:none;">
+ 
+ 
+
+<img src="../assets/hole.png" style="width: 80%;">
+<p>
+
+<span class="popup">
+        
+<span class="highlight"><span id="a21"> I can hardly believe you're my daughter.</span></span>
+          <span class="popuptext" id="myPopup">
+                         The wound on her neck does not bleed as much as it once did, but the ever present <i>drip, drip, drip</i> of blood on tile sets your nerves alight. 
+             
+          </span>
+   </span> 
+
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back20>PREVIOUS</back20></span>&ensp;&ensp;<span class="highlight"><forward21>NEXT</forward21></span>
+
+ </div>
+
+<div id="q22" style="display:none;">
+ 
+ 
+
+<img src="../assets/tears1.png" style="width: 80%;">
+<p>
+
+<span class="highlight"><span id="a22"> ... </span></span>
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back21>PREVIOUS</back21></span>&ensp;&ensp;<span class="highlight"><forward22>NEXT</forward22></span>
+
+ </div>
+
+<div id="q23" style="display:none;">
+ 
+ 
+
+<img src="../assets/tears1.png" style="width: 80%;">
+<p>
+
+<span class="popup" onclick="myFunction()"><span class="highlight"><span id="a23">Oh... don't cry.</span></span>
+  <span class="popuptext" id="myPopup">From your side a voice says, "It's alright, don't push yourself. A lot of people struggle with interpreting emotion." </span>
+</span>
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back22>PREVIOUS</back22></span>&ensp;&ensp;<span class="highlight"><forward23>NEXT</forward23></span>
+
+ </div>
+
+<div id="q24" style="display:none;" >
+
+ 
+ 
+
+<img src="../assets/tears1.png" style="width: 80%;">
+<p>
+<span class="highlight"><span id="a24">I still love you.</span></span>
+   
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back23>PREVIOUS</back23></span>&ensp;&ensp;<span class="highlight"><forward24>NEXT</forward24></span>
+
+ </div>
+
+
+<div id="q25" style="display:none;">
+ 
+ 
+
+<img src="../assets/tears1.png" style="width: 80%;">
+<p>
+<span class="popup" onclick="myFunction()"><span class="highlight"><span id="a25">Even if you are what you are, and you did what you did.</span></span>
+  <span class="popuptext" id="myPopup">From the corner of the room, she smiles at you.  </span>
+</span>
+
+
+<p>
+<pre>
+  
+</pre>
+<span class="highlight"><back24>PREVIOUS</back24></span>&ensp;&ensp;<span class="highlight"><forward25>NEXT</forward25></span>
+
+ </div>
+
+<div id="q26" style="display:none;">
+ 
+ 
+
+<img src="../assets/tears2.png" style="width: 80%;">
+<p>
+
+<span class="popup" onclick="myFunction()"><span class="highlight"><span id="a26">I love you.</span></span>
+  <span class="popuptext" id="myPopup"> You wish you could say you did not deserve this.  </span>
+</span>
+
+
+
+<p>
+<pre>
+
+</pre>
+<span class="highlight"><back25>PREVIOUS</back25></span>&ensp;&ensp;<a href="recovery1.html"><span class="highlight">NEXT</span></a> 
+
+ </div>
+
+
+
+  </div>
+  
+ 
+  
+</div>
+
+
+<pre>
+
+
+
+
+
+</pre>
+
+</div>
+ 
+</div>
+
+ 
+</div>
+
+<pre>
+
+
+</pre>
+
+
+</div>
+
+
+</div>
+
+</div>
+    <div class= "main3">   
+    &ensp;&ensp; 
+   </div>  
+   </div> 
+   
+    <script>
+      $(document).ready(function(){
+        $("forward1").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").show();
+          $("#q3").hide();
+          $("#q4").hide();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("forward2").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").hide();
+          $("#q3").show();
+          $("#q4").hide();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("forward3").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").hide();
+          $("#q3").hide();
+          $("#q4").show();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("forward4").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").hide();
+          $("#q3").hide();
+          $("#q4").hide();
+          $("#q5").show();
+          
+          
+        });
+        
+        // back1
+        
+         $("back1").click(function(){
+          
+          $("#q1").show();
+          $("#q2").hide();
+          $("#q3").hide();
+          $("#q4").hide();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("back2").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").show();
+          $("#q3").hide();
+          $("#q4").hide();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("back3").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").hide();
+          $("#q3").show();
+          $("#q4").hide();
+          $("#q5").hide();
+          
+          
+        });
+        
+         $("back4").click(function(){
+          
+          $("#q1").hide();
+          $("#q2").hide();
+          $("#q3").hide();
+          $("#q4").show();
+          $("#q5").hide();
+          
+          
+        });
+        
+  // forward1 
+  
+  $("forward5").click(function(){
+          
+          $("#big1").hide();
+          $("#big2").show();
+         $("#big3").hide();
+          
+          
+        });
+        
+        $("forward6").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").show();
+          $("#q8").hide();
+          $("#q9").hide();
+          $("#q10").hide(); 
+          
+        });
+        
+        
+         $("forward7").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").hide();
+          $("#q8").show();
+          $("#q9").hide();
+          $("#q10").hide(); 
+          
+        });
+        
+         $("forward8").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").hide();
+          $("#q8").hide();
+          $("#q9").show();
+          $("#q10").hide(); 
+          
+        });
+        
+         $("forward9").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").hide();
+          $("#q8").hide();
+          $("#q9").hide();
+          $("#q10").show(); 
+          
+        });
+        
+       
+        //back2
+        
+         $("back5").click(function(){
+          
+          $("#big2").hide();
+          $("#big1").show();
+          $("#big3").hide();
+          
+        });
+        
+         $("back6").click(function(){
+          
+          $("#q6").show();
+          $("#q7").hide();
+          $("#q8").hide();
+          $("#q9").hide();
+          $("#q10").hide(); 
+          
+        });
+        
+         $("back7").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").show();
+          $("#q8").hide();
+          $("#q9").hide();
+          $("#q10").hide(); 
+          
+        });
+        
+         $("back8").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").hide();
+          $("#q8").show();
+          $("#q9").hide();
+          $("#q10").hide(); 
+          
+        });
+  
+   $("back9").click(function(){
+          
+          $("#q6").hide();
+          $("#q7").hide();
+          $("#q8").hide();
+          $("#q9").show();
+          $("#q10").hide(); 
+          
+        }); 
+        
+        // forward3
+        
+        
+         $("forward10").click(function(){
+          
+          $("#big1").hide();
+          $("#big2").hide(); 
+          $("#big3").show();
+         $("#eleven").show();
+          
+        });
+        
+        
+        $("forward11").click(function(){
+          
+          $("#eleven").hide();
+          $("#q12").show();
+          $("#q13").hide();
+          $("#q14").hide();
+          $("#q15").hide();
+       
+          
+        });
+        
+        
+         $("forward12").click(function(){
+          
+          $("#eleven").hide();
+          $("#q12").hide();
+          $("#q13").show();
+          $("#q14").hide();
+          $("#q15").hide();
+       
+          
+        });
+        
+         $("forward13").click(function(){
+          
+          $("#eleven").hide();
+          $("#q12").hide();
+          $("#q13").hide();
+          $("#q14").show();
+          $("#q15").hide();
+       
+          
+        });
+        
+         $("forward14").click(function(){
+          
+          $("#eleven").hide();
+          $("#q12").hide();
+          $("#q13").hide();
+          $("#q14").hide();
+          $("#q15").show();
+       
+          
+        });
+        
+        
+        //back3
+          
+         $("back10").click(function(){
+          
+          $("#big1").hide();
+          $("#big3").hide();
+         $("#big2").show(); 
+          
+        });
+        
+        
+        
+        $("back11").click(function(){
+          
+         $("#eleven").show();
+          $("#q12").hide();
+          $("#q13").hide();
+          $("#q14").hide();
+          $("#q15").hide();
+          
+        });
+        
+        $("back12").click(function(){
+          
+         $("#eleven").hide();
+          $("#q12").show();
+          $("#q13").hide();
+          $("#q14").hide();
+          $("#q15").hide();
+          
+        });
+        
+        $("back13").click(function(){
+          
+         $("#eleven").hide();
+          $("#q12").hide();
+          $("#q13").show();
+          $("#q14").hide();
+          $("#q15").hide();
+          
+        });
+        
+        
+          $("back14").click(function(){
+          
+         $("#eleven").hide();
+          $("#q12").hide();
+          $("#q13").hide();
+          $("#q14").show();
+          $("#q15").hide();
+          
+        });
+        
+        
+        //4ward 4
+        
+        
+    $("forward15").click(function(){
+          
+          
+         $("#big4").show();
+         $("#q16").show();
+          $("#big3").hide();
+        });
+        
+        
+        $("forward16").click(function(){
+          
+          $("#q16").hide();
+          $("#q17").show();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+        });
+        
+        
+         $("forward17").click(function(){
+          
+            $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").show();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("forward18").click(function(){
+          
+           $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").show();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("forward19").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").show();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+        
+        $("forward20").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").show();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("forward21").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").show();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+          $("forward22").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").show();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+            $("forward23").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").show();
+          $("#q25").hide();
+       
+          
+        });
+        
+            $("forward24").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").show();
+          $("#q26").hide();
+       
+          
+        });
+        
+              $("forward25").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+          $("#q26").show();
+       
+          
+        });
+        
+        
+        
+        
+        //back 4
+        
+        
+         $("back15").click(function(){
+          
+          
+         $("#big4").hide();
+         
+          $("#big3").show();
+        });
+        
+        
+        $("back16").click(function(){
+          
+          $("#q16").show();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+        });
+        
+        
+         $("back17").click(function(){
+          
+            $("#q16").hide();
+          $("#q17").show();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("back18").click(function(){
+          
+           $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").show();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("back19").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").show();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+        
+        $("back20").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").show();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+         $("back21").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").show();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+          $("back22").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").show();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+            $("back23").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").show();
+          $("#q24").hide();
+          $("#q25").hide();
+       
+          
+        });
+        
+            $("back24").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").show();
+          $("#q25").hide();
+          $("#q26").hide();
+       
+          
+        });
+        
+              $("back25").click(function(){
+          
+             $("#q16").hide();
+          $("#q17").hide();
+          $("#q18").hide();
+          $("#q19").hide();
+          $("#q20").hide();
+          $("#q21").hide();
+          $("#q22").hide();
+          $("#q23").hide();
+          $("#q24").hide();
+          $("#q25").show();
+          $("#q26").hide();
+       
+          
+        });
+        
+        
+        
+        
+      });
+      
+      
+      
+      
+    </script>
+   <script>
+   $(document).ready(function(){
+    $("#a1").click(function(){
+       $("#a1").html("Tree");
+     } );
+     
+     $("#a2").click(function(){
+       $("#a2").html("Shoe");
+     } );
+     
+      $("#a3").click(function(){
+       $("#a3").html("Door");
+     } );
+     
+     
+     $("#a4").click(function(){
+       $("#a4").html("Bed");
+     } );
+     
+     $("#a5").click(function(){
+       $("#a5").html("Mirror");
+     } );
+     
+     
+      $("#a6").click(function(){
+       $("#a6").html("barking");
+     } );
+     
+     $("#a7").click(function(){
+       $("#a7").html("sitting");
+     } );
+     
+     
+      $("#a8").click(function(){
+       $("#a8").html("setting");
+     } );
+     
+     $("#a9").click(function(){
+       $("#a9").html("snowing");
+     } );
+     
+     
+     
+     
+     
+     
+      $("#a11").click(function(){
+       $("#a11").html("Relief");
+     } );
+     
+     
+     
+      $("#a12").click(function(){
+       $("#a12").html("Realization");
+     } );
+     
+     
+      $("#a13").click(function(){
+       $("#a13").html("Regret");
+     } );
+     
+     
+      $("#a14").click(function(){
+       $("#a14").html("Regret");
+     } );
+     
+     
+      $("#a15").click(function(){
+       $("#a15").html(" ");
+     } );
+      
+  
+      
+      
+      $("#a16").click(function(){
+       $("#a16").html("Don't look at me like that. I can't fix this for you. You're going to feel this way for the rest of your life.");
+      
+     } );
+     
+     
+     
+      $("#a17").click(function(){
+       $("#a17").html("Why are you apologizing to me? It's already done.");
+      
+     } );
+     
+     
+      $("#a18").click(function(){
+       $("#a18").html("Did you think it would fix things? You're supposed to be smarter than this. All you've done is rip apart a family! All you've done is trap yourself!");
+      
+     } );
+     
+     
+      $("#a19").click(function(){
+       $("#a19").html("Answer me. Tell me exactly how I'm responsible for this. Blame me for what <i>you</i> did, because I'm just the <i>worst</i>.");
+     } );
+     
+     
+      $("#a20").click(function(){
+       $("#a20").html("You're disgusting.");
+     } );
+      
+      
+       $("#a21").click(function(){
+       $("#a21").html("I can hardly believe how ungrateful you are.");
+     } );
+     
+     
+         $("#a23").click(function(){
+       $("#a23").html("It's okay. You're okay.");
+     } );
+     
+     
+         $("#a24").click(function(){
+       $("#a24").html("I always will.");
+     } );
+     
+
+     
+});
+
+
+
+
+
+
+   </script>
+   
+   
+   <script>
+const myElements = document.querySelectorAll(".popup")
+myElements.forEach(el => {
+  el.addEventListener("click", () => {
+    el.querySelector("#myPopup").classList.add("show");
+  })
+})
+</script>
+ 
+
+
+
+   
+   
+      <script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+</script>
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    
+  </body>
+</html>

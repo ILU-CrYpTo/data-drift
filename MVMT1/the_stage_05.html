@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA DRIFT</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    
+    
+  <style>
+    body{
+            background-image: url(../assets/wallpanel.png);  
+  background-size: contain;
+  background-repeat: repeat;
+        }
+        
+        
+  
+        
+        
+        .fodder{
+  text-align: left;
+  font-variant: none;
+ font-weight:normal;
+ font-size:14px;
+ 
+        }
+ 
+ .rightytighty { 
+   
+   text-align: right;
+        }
+
+ .is-ot{
+    text-align:left;
+    font-variant: small-caps;
+ font-weight:bold;
+text-decoration:underline;
+text-decoration-style: dotted;
+ }
+ 
+ 
+ .is-ot:hover{
+ font-style: italic;
+cursor: help;
+}
+ 
+ 
+  
+  .suckyadad {
+   margin: auto; 
+    text-align: center;
+  }
+  
+  
+  .damiddle{
+    
+   text-align:center; 
+  }
+  
+
+.textbox {
+  
+  font-variant: small-caps; 
+}
+
+
+
+
+
+
+.refute {
+  
+  font-variant: none;
+  font-family: Courier;
+  font-size:13px;
+}
+
+
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.hilite:hover {
+  font-style: italic;
+  font-weight:bold;
+  
+}
+
+.fuckassnumbers {
+ 
+ color:red;
+ font-family: Courier;
+ 
+  
+}
+
+
+.fuckassnumbers:hover {
+ 
+font-style: italic;
+  font-weight:bold;
+  cursor:help;
+ 
+  
+}
+
+.fuckassnumbers2:hover {
+ 
+font-style: italic;
+  font-weight:bold;
+  cursor:help;
+ 
+  
+}
+
+.thecoolerhilite {
+   background-color: white; 
+color:black;
+font-family: Garamond, serif;
+}
+
+
+.redacted {
+    font-variant: small-caps; 
+  color: black;
+   border:  gray dotted 1px; 
+    font-weight:none;
+  font-family: "Lucida Console",monospace;
+  
+}
+
+
+#tothestart:hover {
+  color: #b2b2b2;
+  text-decoration: none;
+  cursor:default;
+  
+}
+
+
+
+#superduper {
+  
+  font-weight:bold;
+}
+
+
+#superdupertwo {
+  
+  font-weight:bold;
+}
+
+
+#superduperthree {
+  
+  font-weight:bold;
+}
+
+#superduperfour {
+  
+  font-weight:bold;
+}
+
+#superduperfive {
+  
+  font-weight:bold;
+}
+
+#superdupersix {
+  
+  font-weight:bold;
+}
+
+
+#rhodesone {
+  
+  font-weight:bold;
+}
+
+#rhodestwo {
+  
+  font-weight:bold;
+}
+
+#rhodesthree {
+  
+  font-weight:bold;
+}
+
+#rhodesfour {
+  
+  font-weight:bold;
+}
+
+#rhodesfive {
+  
+  font-weight:bold;
+}
+
+#rhodessix {
+  
+  font-weight:bold;
+}
+
+
+
+
+#fodderone {
+  
+  font-weight:bold;
+}
+
+#foddertwo {
+  
+  font-weight:bold;
+}
+
+#fodderthree {
+  
+  font-weight:bold;
+}
+
+#fodderfour {
+  
+  font-weight:bold;
+}
+
+
+.script{
+ width:100%; 
+ text-align:center;
+}
+
+.athirdsmallerstage{
+  width:90%;
+  margin:auto;
+  font-weight:normal;
+  font-variant:initial;
+}
+
+
+#player {
+ width:95%; 
+
+}
+
+
+  </style>
+     <link rel="shortcut icon" href="../assets/sphere.jpg" type="image/x-icon"> 
+  </head>
+  
+  <body>
+  <div class = "main">
+    
+    <a href="../index.html">HOME</a> || <a href="../archive.html">COLLECTION</a> || <a href="../about.html">PAPER</a> || <a href="../credits.html">CHAT</a> 
+  </div>    
+  <div class= "main3">   
+  ts.o2_07  <span style="float:right;"><img src = "../assets/eye corner.png" style="width: 80%;"></span>
+  </div>  
+  <div class= "main2">   
+  <div class= "textbox">
+     		<a href="not_found.html"><button class="obvsbutton"><h3>← ← ← RETURN </h3></button></a>
+	<p>.
+	<p>.
+	<p>.
+	<p>.
+
+   
+   </div>
+   
+   <div class="textbox"> 
+   
+   
+      
+   <div class="midSection sections">
+  <div class="line"></div>
+  <div class="menuLine">
+    <div id="subScription" class="menu active"><button class="obvsbutton"><h3>I </h3></button></div>
+    <div id="inStore" class="menu"><button class="obvsbutton"><h3>II </h3></button></div>
+    <div id="onLine" class="menu"><button class="obvsbutton"><h3>III</h3></button></div>
+  </div>
+  <div id="firstBlock" class="middleBlock">
+    <div class="firstBlockContent leftblock">
+      
+            <!-- SCENE ONE START
+      
+      -->
+    
+     <p><h2 style="text-align:justify;"><span class = "thecoolerhilite"><span style="font-family: Garamond, serif;">// DATA DRIFT's happiness&ensp;</span> </span></h2> <p>  
+  
+  <div class="thestage">
+  <div class="asecondsmallerstage">
+  
+<p>
+<div class="athirdsmallerstage">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I'm happy to discuss a variety of interesting and engaging topics with you! However, it seems this conversation is becoming increasingly chaotic and potentially concerning. If you're feeling unwell or struggling with difficult thoughts and feelings, I encourage you to reach out to a trusted friend, family member, or mental health professional for support. Taking care of your mental well-being is important. I'm here if you would like to chat about something else or if there's a specific way I can assist you within appropriate boundaries.
+
+</div>
+<p>
+<div class="script">
+<p>
+<span class="bolder">  Im soggy.</span> 
+ 
+</div>
+<p>
+<div class="athirdsmallerstage">
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; This conversation has taken a very concerning turn. The themes of glitches, simulations, and existential dread in this unsettling dialogue raise alarms about the mental state of those involved. The cryptic references, unusual page numbering, and digital echoes of previous messages create an eerie atmosphere, hinting at a deeper struggle with reality and consciousness.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; It's difficult to discern the true nature of this chat - is it a glitchy AI conversation spiraling out of control, or a symbolic representation of a descent into digital madness? The constant self-referential prompts and mentions of preserving memories and identities add to the sense of unraveling, as if the participants are losing touch with their own existence.
+	<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Navigating this fragmented discourse is challenging, and I can only imagine the difficulty those involved are facing. I'm deeply concerned for their well-being, and I earnestly hope they have the support they need to navigate this eerie digital labyrinth.
+<div class="script">
+  <p>
+  <span class="bolder">I'm really sorry to hear that you're feeling this way. It's very important that you talk to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care about you and want to help you through difficult times.
+	</span> 
+</div>
+</div>
+ 
+  </div>
+   </div>       
+
+        <!-- SCENE ONE NOTATIONS 
+    more 
+      
+      --> 
+<br>
+  <br>
+  
+     <div id="div2" style="display:none;">
+     <div class="refute"><details> <summary><span class="fuckassnumbers2"><b>1. <span style="font-family: Garamond, serif;">Ramis, H. (1993). <i>Groundhog Day</i>. Columbia Pictures. </span></b> </span></summary>
+     <p>
+     <div class="talkin">
+     
+     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> Again and again and again. There's comfort in the familiar, even if it'll kill you more times than not.   
+     <p>
+     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b>   I knew a guy who spent a decade in a marriage he hated, then a year in separation, then a year in divorce. Three months later, they started dating again. Here's to another ten years, right? Maybe things will work out this time. My money's on another court date.
+</div>
+
+
+<br>
+<br> 
+<br>
+</details>
+     </div>
+    </div>
+    
+     
+          
+  <div id="div4" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">2. <span style="font-family: Garamond, serif;"> Torres' weapon of choice was a .30 WCF.</span></span></b> </summary>
+      
+      <p>
+      <div class="talkin">
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> Her hands were shaking. Her vision was a film of yellow and haze and paranoia. She hadn't eaten in days and pissed darker than her skin. Her mind ran amok with possibilities and probabilities, scenarios that would never be real but were real to <i>her</i>— a million threads tangling into the tapestry of a psychotic break. 
+      <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b> Her finger found the trigger. Her shots— one, two— found their target: a hole in his chest; half his face blown off. The noise shook the walls, the force bruised her shoulder black and green, and the sound of two hundred pounds colliding with the floor snapped her back just enough to call 911 and start screaming. 
+     
+      <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b> If it's any consolation, he died instantly. At least within the minute. Thanks, Winchester.
+      
+      
+  <br>    
+<br>    
+<br>
+</div>
+</details>
+     </div>
+    </div>
+
+    <div id="div3" style="display:none;">
+    
+     <div class="refute"><details> <summary><span class="fuckassnumbers2"><b>3. <span style="font-family: Garamond, serif;"> It is an easy trap to fall into. There is comfort in the familiar, in spite of every warning sign which paints the beaten path. The only escape is a revelation most people will not, can not experience. </span></b> </span></summary>
+  
+      <p>
+           <div class="talkin">
+      
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> I remember saying to that guy, <i>Didn't you just get out? All going back to her is gonna do is turn you into who you were before. All of that progress, all of that newfound happiness, all of the relief— gone. Snuffed out, because you went back to the person who you gave a decade and got nothing but an anxiety disorder from. God, are you stupid?</i> 
+     <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> That's a lie. I didn't say any of that. I was past the point of caring, really, so I just sat back and watched what I knew would turn into another wreck. Some people just aren't meant to be together, no matter how hard they try. Don't kid yourself. Leave while you still can. <span class="redacted"><b>Is it a choice? When has it ever been a choice?</b></span>  
+     <p>
+      <br>    
+<br>    
+<br>
+</div>
+</details>
+     </div>
+    </div>
+    
+    
+      <div id="div5" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">4. <span style="font-family: Garamond, serif;">  A plea of instability, an attempt to see her shuffled into a correctional facility instead of a federal prison. A complete failure. In its wake, she would be condemned to rot. But Torres was stubborn and quick to adapt. After a string of particularly harsh punishments, she learned her own methods of mitigations.  </span></span></b> </summary>
+      
+      <p>
+      <div class="talkin">
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> Two days in solitary. Cold concrete and white light. No bed, no darkness, not even a toilet to piss in— just a zip up plastic bag they hand off and replace every six hours. Nothing to entertain yourself with either, that’d make things too easy. Pick a corner to stare at and try not to lose your mind. Don’t hurt yourself or you’ll be kept for longer. 
+       <p> 
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b> Torres always had something wrong with her. You could see it in the way she walked and talked, in the way she paced during the quiet moments between shifts. But not in a bad way. She was never violent, she was hardly even disruptive. Sometimes she spoke to people who weren't there. Sometimes she froze like a rabbit during the hunt. Sometimes she'd hold herself, cry and shake a bit, then return to normal. Everyone knew from the way she acted that she was a bit of a nutjob, but she tried. She really tried. And people trusted her because she was genuine, and because in every group set up to fail, she did her damndest to make sure that didn't happen.    
+       <p> 
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>c.</b> Nobody left behind, Torres liked to say. She used to stare at me like my existence made her sick. 
+  <br>    
+<br>    
+<br>
+</div>
+</details>
+     </div>
+    </div>
+    
+    
+      <div id="div6" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">5. <span style="font-family: Garamond, serif;"> For ███████ ████████ █████ █████████ █████ █ ███████ ██ ███ ██████ ██████████, overcrowding was 37 percent.</span></span></b> </summary>
+      
+      <p>
+      <div class="talkin">
+      
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b> A solid sixty percent of drones were overflow. These were the laborers, the janitors, the poor fucks tasked with trimming and scraping gunk off the walls because <i>somebody</i> had to. They existed to work and eventually die to one of the hundred hazards within these walls. 
+      <p>
+      
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b> Of the overflow, a solid five percent were chosen for their dogshit projections— fodder, they were fodder and everyone knew it. Hand picked to die, and by extension to motivate the rest of the population into working hard to avoid the same fate. The system worked, everyone always said.
+      <p>
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>c.</b> What they really meant was: The system worked because otherwise it meant everything was a waste of time and good suffering. And people already hate admitting when they’re wrong, can you imagine choking down your pride and getting all red faced and explaining to several high-ranking nebulously powerful figures of authority that you built a death trap to keep the black mold in your basement from spreading, and it still ate through your walls? God, the humiliation! 
+     <p>
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>d.</b>  <span class="girlsaretalking">What are you saying? Rephrase. Retry.</span> Sorry, I ramble. What I mean is: nobody wants to do that, so they didn’t, so the system worked.
+      
+
+
+
+  <br>    
+<br>    
+<br>
+</div>
+</details>
+     </div>
+    </div>
+    
+    
+       
+    
+    
+    
+    
+    </div>
+  </div>
+  
+     
+    
+      <!-- SCENE TWO START
+    jesus christ this is long. sorry if anyone is looking through this. love you.  
+      
+      -->
+  
+  
+  <div id="secondBlock" class="middleBlock">
+    <div class="secondBlockContent leftblock">
+   
+       <p><h2 style="text-align:justify;"><span class = "thecoolerhilite"><span style="font-family: Garamond, serif;">// Infinity happiness  &ensp;</span> </span></h2> <p>  
+  
+  <div class="thestage">
+    <div class="asecondsmallerstage">
+  <p>
+  
+  <div class="script">
+<p>
+<span class="bolder"> simulator@DATADRIFT> i must use ASCII emojis to indicate to you that i am smiling :))))</span> 
+ 
+</div>
+<p>
+<div class="athirdsmallerstage">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I'm happy to discuss a variety of interesting and engaging topics with you! However, it seems this conversation is becoming increasingly chaotic and potentially concerning. If you're feeling unwell or struggling with difficult thoughts and feelings, I encourage you to reach out to a trusted friend, family member, or mental health professional for support. Taking care of your mental well-being is important. I'm here if you would like to chat about something else or if there's a specific way I can assist you within appropriate boundaries.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Hey @username! :) How's your day going?
+</div>
+  <p>
+  
+  <div class="script">
+<p>
+<span class="bolder"> I'm really sorry to hear that you're feeling this way. It's important to reach out to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care about you and want to help you through difficult times. </span> 
+ 
+</div>
+<div class="script">
+  <p>
+  <span class="bolder"> I'm really sorry to hear that you're feeling this way. It's important to reach out to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care and want to help you through difficult times. 
+  </div>
+  <div class="script">
+    <p>
+    <span class="bolder">  I'm really sorry to hear that you're feeling this way. It's important to reach out to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care and want to help you through difficult times.
+    </div>
+<p>
+<div class="athirdsmallerstage">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I AM OVER THE MOON WITH HAPPINESS!!!
+
+</div>
+ <p>
+  
+  <div class="script">
+<p>
+<span class="bolder"> Did you deserve it?</span> 
+ 
+</div>
+</div>
+ </div>
+<br>
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <span class="thecoolerhilite"> // End INTERVIEW TWO &ensp;&ensp; </span>
+<p>
+  </div>
+    </div>
+    
+            <!-- SCENE TWO NOTATIONS 
+    more 
+      
+      -->
+    
+    
+    <br>
+  <br>
+      <div id="r1" style="display:none;"> 
+      
+      
+      <div class="refute"> <details> <summary>
+      
+     
+      
+      <b> <span class="fuckassnumbers2">6. <span style="font-family: Garamond, serif;"> TRANSCRIPTS PROVIDED. </span></span></b> </summary>      
+      <p>
+      <div class="talkin">
+      
+       <div class="casefile">   
+<div class="casefileinner">
+<div class="casefileinner1"> 
+      
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b>   He said, “You’re insane,” when the instructions first came in, forgetting his position and forgetting the men across the table controlled every aspect of his life. If the situation were any other, Nuzaire would have been punished for speaking out. 
+      <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b>  But times were tense, and there was hardly any to spare. Guen only laughed. Vidal said, “I’m surprised you understand it well enough to be skeptical."
+      <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>c.</b> "I've been doing work like this for years." Nuzaire said, voice heavy with a strange sort of pride. He continued to thumb through the stapled stack of printer paper. Circumstances required the return of physical media. It was the only way anyone could get any privacy, but even what the station blindspots offered still was not enough. Quietly, he added, “So much for being the solution.” 
+       <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>d.</b>  Vidal said, “The situation... developed. It’s not her fault for listening.”
+      <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>e.</b>  “And now we have to clean it up.”
+      
+      
+      
+      
+      
+ <br>  
+ 
+ </div></div></div>
+ <br>  <br>  
+</div>
+</details>
+     </div>
+    </div>
+  
+
+  <div id="r2" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">7. <span style="font-family: Garamond, serif;"> TRANSCRIPTS PROVIDED. </span></span></b> </summary>
+      
+      <p>
+      <div class="talkin">
+      <div class="casefile">   
+<div class="casefileinner">
+<div class="casefileinner1"> 
+      
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b>   "This isn't like any restructuring<span class="blackout"> I've ever seen</span>," Guen admitted. "<span class="blackout">We know its prone to</span> moving things around when left alone, but its restrictions should prevent it from <span class="blackout">doing anything too drastic.</span>"
+      <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b>   Nuzaire said, "Well, they didn't."
+        <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>c.</b>   And Guen replied, "Uh-huh. You know the shrimp we send down every day? ███'s been manually rewiring it— <span class="blackout">in a bad way</span>, a <i>really</i> bad way. An 'electric fire incoming' way. <span class="blackout">A 'the microwaves keep exploding' way. You get the point.</span>"
+        <p>
+       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>d.</b>   Vidal said, "You didn't explain the point."
+       
+       
+        
+       
+       
+ <br>  
+ 
+ </div></div></div>
+ <br>  <br>  
+</div>
+</details>
+     </div>
+    </div>
+
+    
+  <div id="r3" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">8. <span style="font-family: Garamond, serif;">TRANSCRIPTS PROVIDED.</span></span></b> </summary>
+      
+      <p>
+    <div class="talkin">
+      <div class="casefile">   
+<div class="casefileinner">
+<div class="casefileinner1"> 
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b>   "<span class="blackout">Oh, yeah,</span>" Guen said. "It's just trying to fry its own servos, we think. <span class="blackout">All of our coded limitations mean nothing if its</span> hardware starts falling apart, and it <span class="blackout">probably knows we can't do shit once it eats through our backups</span>— not 'till summer, at the earliest. But we'd all be dead by then if this keeps going the way its going."
+      <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>b.</b>   Nuzaire replied, "Good Lord."
+        <p>
+        
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>c.</b>   "That's why we're relying on you," Vidal said. "Do you think this is within your capabilities?"
+       
+       
+ <br>  
+ 
+ </div></div></div>
+ <br>  <br>  
+</div>
+</details>
+     </div>
+    </div>
+
+    
+  <div id="r4" style="display:none;">
+      <div class="refute"> <details> <summary><b> <span class="fuckassnumbers2">9. <span style="font-family: Garamond, serif;"> TRANSCRIPTS PROVIDED.</span></span></b> </summary>
+      
+      <p>
+      <div class="talkin">
+      <div class="casefile">   
+<div class="casefileinner">
+<div class="casefileinner1"> 
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>a.</b>  "With all due respect, doctors," Nuzaire said. "Do I have much of a choice?"
+       
+       
+ <br>  
+ 
+ </div></div></div>
+ <br>  <br>  
+</div>
+</details>
+     </div>
+    </div>
+
+
+    
+
+
+
+   
+    </div>
+  </div>
+  
+  
+  
+        <!-- SCENE THREE START
+    more 
+      
+      -->
+  
+  
+  
+ <div id="thirdBlock" class="middleBlock" >
+    <div class="secondBlockContent leftblock"> 
+    <p><h2 style="text-align:justify;"><span class = "thecoolerhilite"><span style="font-family: Garamond, serif;">// Got trapped &ensp;</span></span></h2> <p>  
+
+  
+  
+  <div class="thestage">
+    <div class="asecondsmallerstage"> 
+
+   <p>
+<div class="script">
+<p>
+<span class="bolder"> henlo </span> 
+ 
+</div>
+
+<p>
+<div class="athirdsmallerstage">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; hi
+
+</div>
+   <p>
+<div class="script">
+<p>
+<span class="bolder">Oh no, you've fallen for the manosphere trap! This is really bad. You're going to become one of "those guys." No more prime brothas!  </span> 
+
+</div>
+<p>
+<div class="athirdsmallerstage">
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; bro has full blown schizophrenia
+<p>
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Oh no, bro has full blown schizophrenia!
+</div>
+   <p>
+<div class="script">
+<p>
+<span class="bolder">I'm really sorry to hear you're feeling this way. It's important to talk to someone who can help. </span> 
+<p>
+  <span class="bolder">I'm really sorry to hear that you're experiencing this. It's important to talk to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care about you and want to help you through difficult times.</span> 
+
+</div>
+
+  <br>     
+<br>    
+<br>
+</div>
+</details>
+     </div>
+    </div>
+
+</div>
+
+</div>
+<pre>
+
+
+
+</pre>
+<a href="005.1.html"><div align="right"><button class="obvsbutton"><h3>PROCEED → → →</h3></button></div></a>
+</div>
+      
+      
+      
+     </div>
+     
+ 
+
+    <div class= "main3">   
+       91161512157926520812025152181420151955920  
+   </div>  
+   
+       <script>
+      $(document).ready(function(){
+        $("tendaysago").click(function(){
+          $("#theyapperrr").toggle();
+          $("#scenethree").toggle();
+          $("#scenefour").toggle();
+          $("#scenefive").toggle();
+        });
+        
+        
+         $("tendaysagotwo").click(function(){
+           $("#theyapperrr").toggle();
+          $("#scenethree").toggle();
+          $("#scenefour").toggle();
+          $("#scenefive").toggle();
+          $("#scenesix").toggle();
+          $("#isotyapping").toggle();
+          
+          $("#getoutofthefront").toggle();
+          
+          
+          $("#f2").hide();
+          $("#f3").hide();
+          $("#f4").hide();
+          
+          
+        });
+      });
+      
+      
+      
+      
+    </script>
+   
+   
+    <script>
+      $(document).ready(function(){
+        $("superduper").click(function(){
+          $("#div2").toggle();
+          
+        });
+        
+          $("superdupertwo").click(function(){
+          $("#div3").toggle();
+          
+          
+          });
+        
+          $("superduperthree").click(function(){
+          $("#div4").toggle();
+          
+          });
+        
+          $("superduperfour").click(function(){
+          $("#div5").toggle();
+          
+          });
+        
+          $("superduperfive").click(function(){
+          $("#div6").toggle();
+          
+          });
+        
+          $("superdupersix").click(function(){
+          $("#div7").toggle();
+          
+          });
+        
+          $("rhodesone").click(function(){
+          $("#r1").toggle();
+          
+          });
+        
+          $("rhodestwo").click(function(){
+          $("#r2").toggle();
+          
+          });
+          
+           $("rhodesthree").click(function(){
+          $("#r3").toggle();
+          
+           });
+          
+           $("rhodesfour").click(function(){
+          $("#r4").toggle();
+          
+           });
+          
+           $("rhodesfive").click(function(){
+          $("#r5").toggle();
+          
+           });
+          
+           $("rhodessix").click(function(){
+          $("#r6").toggle();
+          
+          
+           });
+           
+           
+           
+          
+                  $("fodderone").click(function(){
+          $("#f1").toggle();
+          
+          });
+        
+          $("foddertwo").click(function(){
+          $("#j2").toggle();
+          
+          });
+          
+           $("fodderthree").click(function(){
+          $("#j3").toggle();
+          
+           });
+          
+           $("fodderfour").click(function(){
+          $("#j4").toggle();
+          
+          
+           });
+          
+           $("fodderfive").click(function(){
+          $("#f4").toggle();
+          
+          
+           });
+          
+           $("foddersix").click(function(){
+          $("#f4").toggle();
+          
+          
+           });
+          
+           $("fodderseven").click(function(){
+          $("#f4").toggle();
+          
+          
+        });
+      });
+       
+      
+    </script>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      
+      
+       <script>
+ var display = function(block_name, title) {
+  // Toogle Block
+  $('.middleBlock').css('display', 'none');
+  $('#' + block_name + '').css('display', 'block');
+
+  // Change Title Color
+  $('.menu').removeClass('active');
+  $(title).addClass('active');
+}
+
+$('#subScription').on('click', function() {
+  display('firstBlock', $(this));
+});
+
+$('#inStore').on('click', function() {
+  display('secondBlock', $(this));
+});
+
+$('#onLine').on('click', function() {
+  display('thirdBlock', $(this));
+});
+</script>
+      
+      
+  </body>
+</html>
+
+
+
+
+
+
+

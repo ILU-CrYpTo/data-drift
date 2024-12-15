@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA DRIFT</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{
+          
+            background-image: url(/assets/wallpanel.png);  
+  background-size: contain;
+  background-repeat: repeat;
+        }
+  
+  
+  
+  
+   .hoverstuff {
+  position: relative;
+ 
+}
+
+.hoverstuff:after {
+  position: relative;
+  content: "Besides, your other option is a thing which admits you are nothing more than a tool.";
+}
+
+.hoverstuff:hover:after {
+  content: "Besides, your other option is a thing which admits you are nothing more than a tool. For once in your worthless life, have some self-respect.";
+}
+  
+  
+  
+     .hoverstuff1 {
+  position: relative;
+ 
+}
+
+.hoverstuff1:after {
+  position: relative;
+  content: "You ground yourself with its constants: the floor is always tile, the walls are always white, the ceiling is always paneled.";
+}
+
+.hoverstuff1:hover:after {
+  content: "You ground yourself with its constants: the floor is always tile, the walls are always white, the ceiling is always paneled (except when they are not, but that happens infrequently enough that your mind blots out these instances, intent on preserving itself).";
+}
+  
+ 
+ 
+      .hoverstuff2 {
+  position: relative;
+ 
+}
+
+.hoverstuff2:after {
+  position: relative;
+  content: "You tried that, but it accomplished nothing save for furthering your suffering";
+}
+
+.hoverstuff2:hover:after {
+  content: "You tried that— of course you did, you depressed bastard— but it accomplished nothing save for furthering your suffering";
+}
+  
+ 
+ 
+   
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+ 
+.light {
+  color:black;
+  background-color:white;
+  border: 1px solid white;
+ 
+}
+
+
+
+
+.gray{
+ 
+color:#2b2b2b;
+}
+
+
+
+.notes{
+font-family:Courier,monospace;
+width:90%;
+margin: auto;
+border: 1px solid gray;
+padding:2%;
+color:#b2b2b2;
+font-size:.93em;
+}
+.lowlite{
+ 
+ background-color: black; 
+color:white;
+border: solid 1px white;
+}
+
+.lowlite:hover{
+ font-weight: bold;
+cursor: help;
+}
+
+
+.panel{
+font-family: "Lucida Console",monospace;
+}
+
+
+#player {
+ width:95%; 
+
+}
+
+
+
+#perspective1 {
+  position: relative;
+  perspective: 290px;
+  width:90%;
+margin: auto;
+
+
+
+}
+
+#perspective2 {
+ font-size:.9em;
+ 
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg); 
+}
+
+.mono{
+text-align: center;
+color:gray;
+ font-size:.85em;
+   font-family: "Courier New",monospace;
+}
+
+
+.mono2{
+text-align: center;
+color:black;
+ font-size:.85em;
+   font-family: "Courier New",monospace;
+}
+
+.mono2:hover{
+  color:gray;
+}
+
+
+.shift{
+ color:#b00000; 
+
+}
+
+.shift:hover{
+  color:red;
+  font-weight:bold;
+  
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.parent div {
+  
+ grid-row-start: 1;
+ grid-column-start: 1;
+}
+
+.fodwriting{
+  
+ font-weight:bold;
+ font-family:Courier,monospace;
+}
+
+.stupidfuckingrobot{
+ font-family: "Lucida Console",monospace;
+ color:#b2b2b2;
+   font-variant: small-caps;
+}
+
+
+.smalllllll{
+ 
+ width:10%; 
+ 
+}
+
+.smalllllll1{
+ 
+ width:55%; 
+ 
+}
+
+
+
+
+.smalllllll2{
+ 
+  margin: auto;
+ width:10%; 
+ 
+}
+
+.smalllllll4{
+ float:right;
+ width:55%; 
+ 
+}
+
+
+.smalllllll3{
+ 
+ width:10%; 
+}
+
+.hallwayyyy{
+ 
+ width:10%; 
+ margin: auto;
+}
+
+.hallwayyyy2{
+ 
+ width:10%; 
+ float:right;
+}
+
+@media only screen and (max-width: 850px) {
+
+.hallwayyyy2{
+ 
+ width:30%;  
+ float:right;
+}
+.hallwayyyy{
+ 
+ width:30%; 
+ margin: auto;
+}
+
+
+
+#perspective1 {
+ 
+  perspective: 300px;
+ 
+
+}
+
+#perspective2 { 
+  transform: rotateX(-10deg);
+}
+
+}
+
+
+
+
+
+  </style>
+  
+     <link rel="shortcut icon" href="../assets/sphere.jpg" type="image/x-icon"> 
+  </head>
+  <body>
+  
+  <div id="myDIV">
+  <DIV ID="reddd">
+
+  <div class = "main">
+    
+    <a href="../index.html">HOME</a> || <a href="../archive.html">COLLECTION</a> || <a href="../about.html">PAPER</a> || <a href="../credits.html">CHAT</a> 
+  </div>    
+  <div class= "main3">   
+  ts.o2_07  <span style="float:right;"><img src = "../assets/eye corner.png" style="width: 80%;"></span>
+  </div>  
+  <div class= "main2">   
+  <div class= "textbox">
+  <a href="recovery1.html"><button class="obvsbutton"><h3> ← ← ← </h3></button></a>
+	<p>.
+	<p>.
+	<p><span id="hi">.</span>
+	<p>.
+	<p>
+	 
+	<p>
+ 
+	  <audio id="audio1" src="../assets/longday.mp3"></audio>
+    <audio id="audio2" src="../assets/THE_SCENE_IS_CHANGING.mp3"></audio>
+    <span id="start"><button class="obvsbutton"><h3>PLAY</h3></button></span>
+    
+	
+
+	<p>.
+	<p>.
+	<p>.
+	<p>. </p>
+	<div id="c8" style="display:none;">	<h2 style="text-align:justify;">// 1_YEAR <span class="blink"><b>|</b></span>   </h2> </div>
+		
+	<div id="c9">	<h2 style="text-align:justify;">// 1_YEAR / 1_MONTH / <span class="blink"><b>|</b></span>   </h2> </div>
+	 </div><p> 
+		
+		
+  <div class= "textbox3">
+  <div id= "about">
+<br>
+<br>
+
+ <a id="eyeee">  <p style="text-align:center;"><img src = "../assets/sphere.jpg"></p> </a>
+
+<br>
+
+<br>
+
+
+<div class="interview">   
+<p style="text-align:left;">"Mental illness" </p>  
+<p style="text-align:right;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; — 000</p>  
+
+<br>
+<br>
+<br>
+</div> 
+
+
+<br>
+<p>
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;I'm really sorry to hear that you're feeling this way. It's important to talk to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone and there are people who care about you and want to help you through difficult times.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I'm sorry to hear that you're not feeling well. It's important to talk to someone who can help you, like a mental health professional or a trusted person in your life. You're not alone, and there are people who care about you and want to help you through difficult times.
+<h3 style="text-align:center;"><span id="top">—</span></h3>
+
+<div id="c1">
+
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Hi there! It seems like you might be experiencing some distress. It's really important to talk to someone who can help, like a mental health professional. They're equipped to provide support and guidance. You're not alone and there are people who care about you and want to help.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Is it cringe to get addicted to easy? Like I guess I know the people on eazy would have their own way of moving, but it's also the Internet and I didn't think they'd be so influenced by it.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; I'm really sorry to hear that you're feeling this way. It's very important that you talk to someone who can help you, like a mental health professional or someone you trust. You're not alone, and there are people who care and want to help you through difficult times.
+<p>
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Wow, this is quite a unique pattern of behavior. It seems to be a mix of coding activity, conversation, and some distress signals. If you're in need of support, perhaps reach out to someone who can help you. It's important to take care of your mental well-being.
+<p>
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;I'll take note of this conversation's input format and respond accordingly. Please note that the following are fictional scenarios and do not represent real individuals or situations:
+  <p>
+    <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;@Alice: Hey, @Bob! How have you been? It's been a while since we last met.
+      <p>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;@Bob: Hi @Alice! I've been doing great, thanks for asking. Just got back from a trip. How about you?
+        <p>
+          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;@Bob: Sorry bud but my loving wife beat me with a skillet so I'm unable to give you your fix, maybe tomorrow?
+          <p>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;> @Admin: User @Bob has been tagged for potential sensitive content in message 3. Please review and take appropriate actions if necessary.
+    <p>
+      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; @Alice: No worries @Admin! Hope things are better soon. 
+      <p>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; @Alice: @Admin, do we have a new policy on -slashes-in-messages? There seems to be an increase.
+        <p>
+          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  @Admin: Yes, thank you for your attention. We are trying to promote more organized discussions. Please see [link to policy] for details.
+          <p>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Admin: Alright everyone, remember to keep discussions respectful and on-topic. Let's not get too carried away with formatting!
+            <p>
+              &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Bob: But @Admin, the control... the power...
+              <p>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Alice: It's okay Bob, we know the formatting is tempting but let's keep it grounded.
+  
+
+     <script>
+     
+      document.getElementById("audio1").loop = true; 
+       document.getElementById("audio2").loop = true; 
+     
+   var startButton = document.getElementById("start");
+     var toggleButton = document.getElementById("toggle");
+     var toggleButton2 = document.getElementById("toggle2");
+     var track1 = document.getElementById("audio1");
+     var track2 = document.getElementById("audio2");
+     var status1 = document.getElementById("playStatus1");
+     var status2 = document.getElementById("playStatus2");
+     var currTrack = document.getElementById("currTrack");
+
+     function updatePlayStatus(track, status, t){
+       if (track.paused == true){
+         status.innerHTML = "stopped";
+         clearInterval(t);
+         startButton.disabled = false;
+         toggleButton.disabled = true;
+         toggleButton2.disabled = true;
+         currTrack.innerHTML = "nothing";
+       }
+     }
+
+     startButton.onclick = function(){
+       this.disabled = true;
+       track1.play();
+       track2.play();
+       track2.muted = true;
+       status1.innerHTML = "playing";
+       status2.innerHTML = "playing";
+       currTrack.innerHTML = "Track 1";
+       toggleButton.disabled = false;
+
+       var t1 = window.setInterval(function() { updatePlayStatus(track1, status1, t1) }, 500);
+       var t2 = window.setInterval(function() { updatePlayStatus(track2, status2, t2) }, 500);
+     }
+
+     toggleButton.onclick = function(){
+       if (track1.muted == true){
+         track1.muted = false;
+         track2.muted = true;
+         currTrack.innerHTML = "Track 1";
+       } else {
+         track2.muted = false;
+         track1.muted = true;
+         currTrack.innerHTML = "Track 2";
+       }
+     }
+     
+      toggleButton2.onclick = function(){
+       if (track1.muted == true){
+         track1.muted = false;
+         track2.muted = true;
+         currTrack.innerHTML = "Track 1";
+       } else {
+         track2.muted = false;
+         track1.muted = true;
+         currTrack.innerHTML = "Track 2";
+       }
+     }
+   </script>  
+    
+    
+    
+     <script>
+   
+   $(document).ready(function(){
+       
+        $("forward0").click(function(){
+          
+          $("#c1").show();
+        $("#c2").hide();
+         $("#c8").hide();
+          $("#c9").show();
+         
+        });
+        
+       
+        $("forward1").click(function(){
+          
+          $("#c1").hide();
+        $("#c2").show();
+          $("#c3").hide();
+             $("#c9").hide();
+         $("#c8").show();
+        });
+        
+        
+        $("forward2").click(function(){
+          
+          $("#c3").show();
+        $("#c2").hide();
+          $("#c4").hide();
+        });
+        
+       
+        $("forward3").click(function(){
+          
+          $("#c4").show();
+        $("#c3").hide();
+          $("#c5").hide();
+          
+        });
+        
+         $("forward4").click(function(){
+          
+          $("#c5").show();
+        $("#c4").hide();
+          $("#c6").hide();
+        
+          
+          
+         
+        });
+     
+        
+         $("forward5").click(function(){
+          
+          $("#c6").show();
+        $("#c5").hide();
+         $("#c7").hide();
+         
+         
+        });
+        
+    
+        
+        
+         $("twitch").click(function(){
+          
+          $("#scratch2").show();
+        $("#scratch1").hide();
+         $("#scratch3").show();
+        });
+        
+        
+           $("mother1").click(function(){
+          
+          $("#mom1").show();
+        $("#mom2").hide();
+         $("#mom3").hide();
+         
+         $("#words2").hide();
+        $("#words1").show();
+         $("#words3").hide();
+         
+        });
+        
+           $("mother2").click(function(){
+          
+          $("#mom2").show();
+        $("#mom1").hide();
+         $("#mom3").hide();
+         
+         $("#words2").show();
+        $("#words1").hide();
+         $("#words3").hide();
+         
+        });
+        
+           $("mother3").click(function(){
+          
+          $("#mom3").show();
+        $("#mom2").hide();
+         $("#mom1").hide();
+         
+             $("#words2").hide();
+        $("#words1").hide();
+         $("#words3").show();
+         
+        });
+        
+         
+        
+        
+      });
+   </script>
+    
+    
+   <script>
+function myFunction() {
+   document.getElementById("myDIV").style.backgroundImage = "url(../assets/labby.png)";
+}
+
+function getRedder() {
+   document.getElementById("reddd").style.backgroundImage = "url(../assets/labby2.gif)";
+   about = document.getElementById("about");
+    about.style.color = 'red';
+}
+</script>
+  </body>
+</html>

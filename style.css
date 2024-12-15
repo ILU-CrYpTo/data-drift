@@ -1,0 +1,1048 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+   body{
+  
+    background-color: black;
+    color: white;
+    font-family: "Lucida Console",monospace;
+    
+    
+    
+  
+  }
+  
+      @font-face {
+      font-family: 'Lucida Console';
+      font-style: normal;
+      font-weight: normal;
+      src: local('hack'), url('LilitaOne-Regular.ttf') format('woff');
+      }    
+  
+  .revealthatdude {
+    display: none;
+  }
+      
+  .nothing:hover + .revealthatdude {
+    display: block;
+     
+  }
+  
+  @keyframes horizontal-shaking {
+   0% { transform: translateX(0) }
+   25% { transform: translateX(5px) }
+   50% { transform: translateX(-5px) }
+   75% { transform: translateX(5px) }
+   100% { transform: translateX(0) }
+  }
+  
+  
+  .revealthatdude2 {
+    display: none;
+  }
+      
+  .nothing2:hover + .revealthatdude2 {
+    display: block;
+     
+  }
+  
+  .blackout{
+   border: 1px solid black;
+   background-color:black;
+    
+  }
+  
+  .chatterrrrrrr{
+   font-family:'Lucida Console', monospace;
+   
+  text-decoration: line-through;
+   color:#b40000;
+    font-variant: small-caps;
+  }
+  
+  
+  
+  .hilitenumber{
+   color:yellow;
+   padding:2px;
+   border:1px solid black;
+   
+   
+    
+  }
+  
+  .hilitenumber:hover{
+   background:yellow; 
+   color:black;
+   cursor:help;
+    
+  }
+  
+  
+  .momther{
+    
+   font-family:"Courier New", monospace;
+   
+    color: transparent;
+     text-shadow: 0 0 5px rgba(255,0,0,0.9);
+    
+  }
+  
+  
+  .momther:hover{
+    
+   font-family:"Courier New", monospace;
+   
+    color: #b00000;
+     text-shadow: 0 0 5px rgba(255,0,0,1);
+    
+  }
+  
+  .revealthatdude3 {
+    display: none;
+  }
+      
+  .nothing3:hover + .revealthatdude3 {
+    display: block;
+     
+  }
+  
+  
+  .revealthatdude4 {
+    display: none;
+  }
+      
+  .nothing4:hover + .revealthatdude4 {
+    display: block;
+     
+  }
+  
+  
+  
+  
+  
+  .revealthatdude5 {
+    display: none;
+  }
+      
+  .nothing5:hover + .revealthatdude5 {
+    display: block;
+     
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  .girlsaretalking {
+    
+      font-variant: small-caps; 
+      font-family: "Lucida Console",monospace;
+      color: black;
+      font-size: 14px;
+      border: 1px dotted gray;
+  
+  }
+  
+  
+  .fod{
+     color: red;
+     border: 1px solid red;
+   
+  padding:.2%;
+  } 
+  
+  
+  .fod:hover{
+     color:white;
+     font-weight:bold;
+     cursor:help;
+  } 
+  
+  
+  .ma{
+     color: transparent;
+     text-shadow: 0 0 2px white;
+   font-family:Courier,monospace;
+  
+  } 
+  
+  .ma:hover{
+     color: transparent;
+     text-shadow: 0 0 1px white; 
+  
+  } 
+  
+  
+  .mablur{
+     color: transparent;
+     text-shadow: 0 0 4px white;
+   font-family:Courier,monospace;
+  
+  } 
+  
+   
+  
+  
+   .whoisthislol{
+  font-family:Courier,monospace;
+  font-size:14.5px;
+  }
+  
+  .notes{
+  font-family:Courier,monospace;
+  width:90%;
+  margin: auto;
+  border: 1px solid gray;
+  padding:2%;
+  color:#b2b2b2;
+  }
+  
+  .cross{
+    
+   color:gray;
+   text-decoration: line-through;
+  }
+  
+  
+  .twitchh{
+   text-decoration:underline dotted red;
+   color:red;
+    
+  }
+  
+  .twitchh:hover{
+   font-weight:bold;
+   color:red;
+    cursor: help;
+  }
+  
+  
+  
+  .main {
+  
+  width: 72%;
+  text-align:center;
+  margin: auto;
+  border: 2px solid gray;
+  padding: 1.2%;
+  font-size: 14px;
+  background-color:black;
+  }
+  
+  .main2 {
+  
+  width: 72%;
+  margin: auto;
+  border: 2px solid gray;
+  padding: 1.2%;
+  font-size: 16px;
+  background-color:black;
+  
+  }
+  
+  .main3 {
+  
+  width: 72%;
+  margin: auto;
+  border: 2px solid gray;
+  padding-top: .2%;
+  padding-bottom: .2%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  font-size: 16px;
+  color:gray;
+  overflow: clip;
+  background-color:black;
+  }
+  
+  
+  .interview {
+    
+     color: gray;
+   MAX-width:90%;
+   padding:1%;
+    margin:auto;
+    font-size: 14px;
+    font-family:courier;
+    
+  
+  }
+  
+  .interview details:hover {
+    
+   color: white;
+   font-weight:bold;
+   cursor: default; 
+   margin: auto;
+  }
+  
+  
+  .itty {
+  
+    margin:auto;
+    font-size: 15px;
+    
+  }
+  
+  
+  .narrator{
+    
+   font-family: Garamond, serif; 
+  color:gray;
+  text-align:justify;
+  margin:auto;
+  width:40%;
+  }
+   
+   
+   .diosmio{
+    font-family:'Courier New';
+    color:#adadad;
+   }
+  
+  .textbox {
+  
+  width: 50%;
+  margin: auto;
+  padding: 1%;
+  padding-top: .1%;
+  font-size: 1em;
+  border: 2px solid black;
+  text-align:justify;
+  overflow-wrap: break-word;
+  }
+  
+  .textbox2 {
+  
+  width: 50%;
+  margin: auto;
+  padding: 1%;
+  padding-top: .1%;
+  font-size: 1em;
+  border: 2px solid black;
+  
+  
+  }
+  
+  
+  .textbox3 {
+  
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+  padding-top: .1%;
+  font-size: 1em;
+  text-align:justify;
+  font-family: Garamond, serif;
+  border: 1px dashed white;
+  }
+  
+  .textbox4 {
+  
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+  padding-top: .1%;
+  font-size: 16px;
+  
+  }
+  
+  
+  .textbox5 {
+  
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+  padding-top: .1%;
+  font-size: .9em;
+  text-align:justify;
+  font-family: courier, monospace;
+  border: 1px solid #b00000;
+  }
+  
+  
+  
+  .column {
+  float: left;
+  margin: auto;
+  padding: 1%;
+  text-align:center;
+  
+  }
+  
+  .column1 {
+  float: right;
+  margin: auto;
+  padding: 1%;
+  text-align:center;
+  
+  }
+  
+  
+  
+  .dronespeak{
+   font-family: 'Verdana', sans-serif;
+   color:yellow;
+    width:100%;
+    text-align:justify;
+    font-size:14px;
+  }
+  
+  
+  .casefile {
+    
+   background-color: white; 
+   width:95%;
+  font-family: 'Verdana', sans-serif;
+   color: black;
+   margin:auto;
+   text-align:justify;
+   font-size: .9em; 
+  }
+  
+  
+  .casefileinner1 {
+    
+  padding: 2%;
+   margin:auto;
+   border-left: 5px dotted black;
+  border-right: 5px dotted black;
+   height:100%;
+    
+  }
+  
+  
+  
+  
+  .casefileinner {
+    padding-right: 2%;
+  padding-left: 2%;
+   margin:auto;
+  }
+  
+  
+  /*text effects     */
+  
+  .hilite{
+   
+   background-color: white; 
+  color:black;
+  }
+  
+  .hilite:hover{
+   font-weight: bold;
+  cursor: help;
+  }
+  
+  
+  .fthots{
+   
+   text-decoration: underline dotted;
+  }
+  
+  .fthots:hover{
+   font-style: italic;
+  cursor: help;
+  }
+  
+  
+  
+  
+  .prelude{
+   
+   background-color: black; 
+  color:white;
+  border: 3px solid black;
+  }
+  
+  
+  
+  
+  .isthots{
+   
+   text-decoration: underline dotted;
+  }
+  
+  .isthots:hover{
+   font-style: italic;
+  cursor: help;
+  }
+  
+  
+  
+  
+  
+  
+  a:link {
+    color: red;
+    background-color: transparent;
+    font-weight:bold;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+    background-color: transparent;
+    font-weight:bold;
+   
+  }
+  #main2:visited {
+    color: red;
+    background-color: transparent;
+    font-weight:bold;
+   text-decoration: underline;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight:bold;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight:bold;
+  }
+  
+  
+  ::selection {
+    background: #5d0000; 
+    color:white;
+    
+    
+    /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #5d0000; /* Gecko Browsers */
+    color:white;
+  }
+  
+  
+  
+  .em-wide {
+    letter-spacing: 0.4em;
+  }
+  .em-wider {
+    letter-spacing: 1em;
+  }
+  .em-tight {
+    letter-spacing: -0.05em;
+  }
+  .px-wide {
+    letter-spacing: 6px;
+  }
+  
+  
+  
+  /*buttonssssssssssssssssssss     */
+  
+  
+  
+  .obvsbutton {
+     background-color: black; 
+    color: gray;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: auto;
+    cursor: pointer;
+   font-family: "Lucida Console",monospace;
+    -webkit-transition-duration: 0.05s; /* Safari */
+    transition-duration: 0.05s;
+    border: 1px solid gray;
+  
+    }
+  .active, .obvsbutton:hover {
+  box-shadow: 0 3px 3px white, 0 4px 10px 0 white;
+  color: white;
+  border: 1px solid white;
+  }
+  
+  .active, .obvsbutton:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 1px white, 0 2px 6px 0 white;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  
+  .panel{
+    
+   border: 1px solid gray;
+   color: gray;
+   MAX-width:90%;
+   padding:1%;
+    margin:auto;font-size: 13px;
+    font-weight: bold;
+      font-variant: small-caps;
+  }
+  
+  
+  .panel2{
+    
+   border: 1px solid gray;
+   color: gray;
+   width:90%;
+   padding:1%;
+    margin:auto;
+    font-size: .94em;
+    font-family: Garamond, serif;
+  }
+  
+  
+  .panel3{
+    
+   border: 1px solid #7d0404;
+   background-color:black;
+   color: #690000;
+   max-width:35%;
+   padding:1%;
+    margin:auto;
+    font-size: .95em;
+    font-family: Garamond, serif;
+    text-align:justify;
+  }
+  
+  
+  
+  /*BUTTON 2     */
+  
+  
+  .obvsbutton2 {
+     background-color: black; 
+    color: gray;
+    font-weight: bold;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-right: auto;
+    cursor: pointer;
+    font-family: monospace;
+    -webkit-transition-duration: 0.05s; /* Safari */
+    transition-duration: 0.05s;
+    border: 1px solid gray;
+  
+  
+    }
+  .active, .obvsbutton2:hover {
+  box-shadow: 0 3px 3px white, 0 4px 10px 0 white;
+  color: white;
+  border: 1px solid white;
+  }
+  
+  .active, .obvsbutton2:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 1px white, 0 2px 6px 0 white;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  
+  
+  
+  .blink {
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
+  .thestage{
+  
+  margin:auto;
+  
+  width:97%;
+  
+  height:350px;
+  
+  overflow: scroll;
+  
+  
+  color:#b2b2b2;
+  
+  font-weight:bold;
+  
+   font-size: .94em;
+   
+   border:  gray dotted 2px; 
+   
+   resize: vertical;
+   
+   overflow-x: hidden;
+   
+   margin-left: auto;
+  margin-right: auto;
+  
+  
+  }
+  
+  
+  
+  .asecondsmallerstage {
+    
+    padding: 10px;
+  }
+  
+  
+  
+  .bolder {
+      font-weight: bolder;
+  }
+  
+  
+  .script {
+    margin:auto;
+    width:90%;
+    font-variant:none;
+     font-weight:normal;
+      font-family: Garamond, serif;
+      border-top:  red solid 1px; 
+       border-bottom:  red solid 1px;
+      padding: 3px;
+      color:#b00000;
+  }
+  
+  
+  .script2 {
+    margin:auto;
+    width:90%;
+    font-variant:none;
+     font-weight:normal;
+      font-family: Courier;
+      border: none;
+      padding: 3px;
+      color:#b00000;
+  }
+  
+  
+  
+  
+  .talkingISOT {
+    margin:auto;
+    width:60%;
+    font-variant: small-caps;
+   
+    font-size:17px; 
+       
+      padding: 14px;
+      color:white;
+       font-family: "Lucida Console",monospace;
+       text-align:center;
+   
+   overflow-x: hidden;
+  }
+  
+  
+  .writerrr {
+    margin:auto;
+    width:60%;
+   
+   
+    font-size:17px; 
+       
+      padding: 14px;
+      color:white;
+       font-family: "Courier New",monospace;
+       text-align:center;
+   
+   overflow-x: hidden;
+  }
+  
+  
+   .leftyloosey { 
+     
+     text-align: left;
+     font-weight:normal;
+     font-variant:normal;
+     font-size:13px;
+     color:#bababa;
+          }
+  
+  
+  .talkin {
+    
+   color:gray; 
+    
+  }
+  
+  
+  .toggleeeeee{
+   width:80%; 
+   margin:auto;
+   text-align:center;
+   font-weight:bold;
+  }
+  
+  .whatifikillmyself {
+    
+  float:right;
+    margin:auto;
+    width:33%;
+  }
+  
+  .whatifikillmyself {
+    
+  margin:auto;
+    width:33%;
+  }
+  
+  
+  .whatifikillmyself2 {
+    
+  float:left;
+    margin:auto;
+    width:33%;
+  }
+  
+  
+  
+  .oohlala {
+    
+   border:  gray dotted 2px; 
+   padding: 18px;
+   margin:auto;
+    font-family: Garamond, serif;
+  }
+  
+  
+  
+  
+  .musicsheet {
+    
+  width:100%;
+  background-size:cover;
+  
+   background-image: url("/assets/prelide.gif");
+  }
+  
+  
+  
+  
+  /* SCENE JAVA SYUFF */
+  
+  .midSection .sectionHeader {
+     
+    margin-bottom: 18px;
+  }
+  
+  .menuLine {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .menuLine div {
+    position: relative;
+    margin: 5px 0;
+  }
+
+  .menu {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  .menuLine .menu#onLine {
+    border: none;
+  }
+  .middleBlock {
+    display: none;
+    width:100%;
+   margin:auto;
+  
+  }
+  #firstBlock {
+    display: block;
+  }
+  .menu.active {
+    color: white
+  }
+  
+  
+  
+  
+  
+  /* container */
+  
+  
+  @media only screen and (max-width: 850px) {
+  /* extra css here */
+  
+  .textbox{
+    width: 90%;
+  margin: auto;
+  font-size: 1em;
+  border: 2px solid black;
+  text-align:left;
+  }
+  .textbox2{
+    width: 90%;
+  margin: auto;
+  font-size: 1em;
+  border: 2px solid black;
+  text-align:left;
+  }
+  
+  .textbox3{
+    width: 90%;
+  margin: auto;
+  font-size: 1em;
+  border: 2px solid black;
+  text-align:left;
+  }
+  
+  .textbox3{
+    width: 90%;
+  margin: auto;
+  font-size: 1em;
+  }
+  
+  .textbox5{
+    width: 90%;
+  margin: auto;
+  font-size: 1em;
+  text-align:left;
+  }
+  
+  
+  
+  .gallery{
+    background-color: black; 
+    max-width: 90%;
+    text-align: center;
+    position:relative;
+    padding:3em;
+    margin: 0 auto;
+  }
+  
+  .panel{
+    
+   border: 2px solid gray;
+   color: gray;
+   width:99%;
+   padding:1%;
+   margin:auto;
+   font-size: 13px;
+    
+  }
+  
+  .panel3{
+    
+    max-width:90%;
+   padding:1%;
+   margin:auto;
+   font-size: 13px;
+  }
+  
+  .main {
+    width:90%;
+    
+    
+  }
+  
+  
+  .main2 {
+  
+  margin: auto;
+  border: 2px solid gray;
+  padding: 1.2%;
+  width:90%
+  }
+  
+  .main3 {
+  
+  width:90%
+  
+  }
+  
+  
+  .thestage{
+   text-align: left; 
+   width:97%;
+    
+  }
+  
+  .talkingISOT {
+  width:97%;
+  padding: 5px;
+  
+  }
+  
+  .writerrr {
+  width:97%;
+  padding: 5px;
+  
+  }
+  
+  
+  .toggle{
+   width:90%; 
+   margin:auto;
+   text-align:center;
+   font-weight:bold;
+  }
+  
+  .whatifikillmyself {
+    
+  float:none;
+    margin:auto;
+    width:100%;
+  }
+  
+  .whatifikillmyself {
+    
+  margin:auto;
+    width:100%;
+  }
+  
+  
+  .whatifikillmyself2 {
+    
+  float:none;
+    margin:auto;
+    width:100%;
+  }
+  
+  .casefile {
+    
+   
+   text-align:left;
+  }
+  
+  
+  img{
+  max-width: 80%;
+  }
+  
+  }
+  
+.name {
+  width: 1600px;
+  margin-left: -8%;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
